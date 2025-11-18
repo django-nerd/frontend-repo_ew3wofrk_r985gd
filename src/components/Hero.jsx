@@ -3,14 +3,15 @@ import { motion } from 'framer-motion'
 
 function Hero() {
   return (
-    <section className="relative min-h-[90vh] pt-28 overflow-hidden">
-      <div className="absolute inset-0">
+    <section className="relative min-h-[92vh] pt-28 overflow-hidden">
+      {/* Spline background canvas */}
+      <div className="absolute inset-0 opacity-90">
         <Spline scene="https://prod.spline.design/4cHQr84zOGAHOehh/scene.splinecode" style={{ width: '100%', height: '100%' }} />
       </div>
 
       <div className="relative z-10">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid lg:grid-cols-12 gap-8 items-center">
+          <div className="grid lg:grid-cols-12 gap-10 items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -22,18 +23,18 @@ function Hero() {
                 Introducing our AI voice agent platform
               </div>
 
-              <h1 className="mt-6 text-5xl sm:text-6xl font-semibold tracking-tight text-white">
-                Elevate your brand with intelligent, voice-first experiences
+              <h1 className="mt-6 text-5xl sm:text-6xl font-semibold tracking-tight text-lux">
+                Elegant intelligence for remarkable brands
               </h1>
-              <p className="mt-6 text-lg text-white/70 max-w-2xl">
-                We craft bespoke AI agents that speak, adapt, and convert. A fusion of strategy, design, and cutting-edge research engineered for discerning brands.
+              <p className="mt-6 text-lg text-white/75 max-w-2xl">
+                Bespoke AI agents that converse, remember, and perform. Precision engineered for luxury, hospitality, finance, and automotive.
               </p>
 
               <div className="mt-8 flex flex-wrap items-center gap-4">
-                <a href="#contact" className="inline-flex items-center justify-center rounded-xl bg-white text-slate-900 px-6 py-3 text-sm font-medium shadow-[0_10px_40px_-10px_rgba(255,255,255,0.6)] hover:shadow-[0_10px_50px_-10px_rgba(255,255,255,0.8)] transition-shadow">
+                <a href="#contact" className="inline-flex items-center justify-center rounded-xl bg-white text-slate-900 px-6 py-3 text-sm font-medium shadow-[0_10px_40px_-10px_rgba(255,255,255,0.6)] hover:shadow-[0_10px_50px_-10px_rgba(255,255,255,0.85)] transition-shadow">
                   Book a private demo
                 </a>
-                <a href="#work" className="inline-flex items-center justify-center rounded-xl bg-white/10 text-white px-6 py-3 text-sm border border-white/10">
+                <a href="#work" className="inline-flex items-center justify-center rounded-xl bg-white/10 text-white px-6 py-3 text-sm border border-white/10 hover:bg-white/15">
                   Explore our work
                 </a>
               </div>
@@ -60,7 +61,7 @@ function Hero() {
               transition={{ delay: 0.1, duration: 0.8 }}
               className="lg:col-span-5"
             >
-              <div className="relative rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-6">
+              <div className="relative rounded-3xl border border-white/10 bg-white/5 backdrop-blur-2xl p-6 hairline">
                 <div className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-b from-transparent via-indigo-500/5 to-fuchsia-500/10" />
                 <div className="relative grid grid-cols-2 gap-4">
                   {[
@@ -81,7 +82,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_40%,rgba(99,102,241,0.25),transparent_60%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_40%,rgba(99,102,241,0.22),transparent_60%)]" />
     </section>
   )
 }

@@ -25,20 +25,20 @@ const features = [
 
 function Features() {
   return (
-    <section id="solutions" className="relative py-24">
-      <div className="absolute inset-0 bg-[radial-gradient(800px_400px_at_50%_0%,rgba(255,255,255,0.06),transparent)]" />
+    <section id="solutions" className="relative py-28">
+      <div className="absolute inset-0 bg-[radial-gradient(800px_400px_at_50%_0%,rgba(255,255,255,0.05),transparent)]" />
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="max-w-2xl">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-white">What we craft</h2>
+          <h2 className="text-3xl sm:text-4xl font-semibold text-lux">What we craft</h2>
           <p className="mt-4 text-white/70">Precision-built intelligence—tailored to your systems, your standards, your clientele.</p>
         </div>
 
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map(({ icon: Icon, title, desc }) => (
-            <div key={title} className="group relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6 overflow-hidden hover:border-white/20 transition">
-              <div className="absolute -inset-px opacity-0 group-hover:opacity-100 transition bg-[conic-gradient(from_180deg_at_50%_50%,rgba(168,85,247,0.25),rgba(59,130,246,0.2),rgba(251,146,60,0.2),transparent)] blur-2xl" />
+            <div key={title} className="group relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-2xl p-6 overflow-hidden hover:border-white/20 transition hairline">
+              <div className="absolute -inset-px opacity-0 group-hover:opacity-100 transition bg-[conic-gradient(from_180deg_at_50%_50%,rgba(168,85,247,0.2),rgba(59,130,246,0.18),rgba(251,146,60,0.16),transparent)] blur-2xl" />
               <div className="relative">
-                <div className="w-10 h-10 rounded-xl bg-white/10 border border-white/10 flex items-center justify-center text-white">
+                <div className="w-10 h-10 rounded-xl bg-white text-slate-900 border border-white/10 flex items-center justify-center">
                   <Icon className="w-5 h-5" />
                 </div>
                 <h3 className="mt-4 text-white font-medium">{title}</h3>

@@ -6,11 +6,11 @@ function Navbar() {
   return (
     <header className="fixed top-0 inset-x-0 z-50">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mt-6 backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl shadow-[0_0_60px_rgba(139,92,246,0.25)]">
+        <div className="mt-6 backdrop-blur-2xl bg-white/5 border border-white/10 rounded-2xl shadow-[0_0_80px_rgba(139,92,246,0.25)] hairline">
           <div className="flex items-center justify-between px-6 py-4">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-violet-500 via-fuchsia-500 to-amber-400 ring-2 ring-white/10 shadow-[0_0_30px_rgba(168,85,247,0.6)]" />
-              <span className="text-white/90 font-semibold tracking-wide">Aurelia AI</span>
+              <span className="text-white/90 font-medium tracking-wider">Aurelia AI</span>
             </div>
 
             <nav className="hidden md:flex items-center gap-8 text-sm text-white/70">
@@ -30,7 +30,7 @@ function Navbar() {
               </svg>
             </button>
 
-            <a href="#contact" className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white transition border border-white/10">
+            <a href="#contact" className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white text-slate-900 hover:bg-white/90 transition shadow-[0_10px_30px_-10px_rgba(255,255,255,0.6)]">
               <span>Request Access</span>
             </a>
           </div>
@@ -42,7 +42,7 @@ function Navbar() {
                 <a onClick={() => setOpen(false)} className="hover:text-white" href="#work">Work</a>
                 <a onClick={() => setOpen(false)} className="hover:text-white" href="#about">About</a>
                 <a onClick={() => setOpen(false)} className="hover:text-white" href="#contact">Contact</a>
-                <a onClick={() => setOpen(false)} href="#contact" className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white transition border border-white/10">
+                <a onClick={() => setOpen(false)} href="#contact" className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-white text-slate-900 hover:bg-white/90 transition shadow-[0_10px_30px_-10px_rgba(255,255,255,0.6)]">
                   <span>Request Access</span>
                 </a>
               </div>
